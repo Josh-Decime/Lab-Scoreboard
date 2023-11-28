@@ -15,7 +15,7 @@
         <section class="container-fluid">
             <section class="row">
                 <div class="d-flex justify-content-end">
-                    <button class="btn btn-primary col-2 p-2 m-5">Reset</button>
+                    <button class="btn btn-primary col-2 p-2 m-5" onclick="resetScores()">Reset</button>
                 </div>
             </section>
 
@@ -27,17 +27,17 @@
             <section class="row text-light bg-primary bg-opacity-50">
                 <section class="d-flex justify-content-around">
                     <div class="col-6 text-center">
-                        <h1>Team 1</h1>
-                        <span id="scoreBoardOne"></span>
-                        <button class="btn btn-primary" onclick="scoreOne()">Team1</button>
+                        <h1>Player One</h1>
+                        <div class="fs-1" id="scoreBoardOne">0</div>
+                        <button class="btn btn-primary m-2" onclick="scoreOne()">Score Increase +1</button>
+                        <button class="btn btn-primary m-2" onclick="threeScoreOne()">Score Increase +3</button>
                     </div>
                     <div class="col-6 text-center">
-                        <h1>Team2</h1>
-                        <span></span>
-                        <button class="btn btn-danger">Team2</button>
+                        <h1>Player Two</h1>
+                        <div class="fs-1" id="scoreBoardTwo">0</div>
+                        <button class="btn btn-danger" onclick="scoreTwo()">Score Increase +1</button>
                     </div>
                 </section>
-                
             </section>
         </section>
     </main>
